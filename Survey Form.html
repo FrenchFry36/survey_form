@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form method="post" action="mailto:engineerakbarov@gmail.com" >
+    <h1>Surrvey Form</h1>
+    <p>Thank you for taking the time to help us improve quality of service</p>
+      <fieldset>
+        <label id="name-label" for="first-name">Name <input id="name" name="name" type="text" placeholder="Enter your name" class="first" required /></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" class="first" required /></label>
+        <label id="age-label" for="age">Age <input id="age" name="age" type="number" placeholder="Age" min="16" max="90" class="first" required /></label>
+        <label id="dropdown-label" for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="dropdown" class="first">
+            <option value="">(select one)</option>
+            <option value="1">Full Time Job</option>
+            <option value="2">Full Time Learner</option>
+            <option value="3">Prefer not to say</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>Would you recommend our company?
+        <label><input id="definitely" name="recommend" type="radio" class="second" checked/> Definitely</label>
+        <label><input id="maybe" name="recommend" type="radio" class="second" /> Maybe</label>
+        <label><input id="not-sure" name="recommend" type="radio" class="second" /> Not sure</label>
+      </fieldset>
+      <fieldset>What would you like to see improved? (Check all that apply)
+        <label><input id="office" name="office" type="checkbox" class="third" /> Office</label>
+        <label><input id="coffee" name="coffee" type="checkbox" class="third" /> Coffee</label>
+        <label><input id="salary" name="salary" type="checkbox" class="third" /> Salary</label>
+        <label><input id="call-center" name="call-center" type="checkbox" class="third" /> Сall center</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submir" value="submit" class="first" >
+    </form>
+  </html>
